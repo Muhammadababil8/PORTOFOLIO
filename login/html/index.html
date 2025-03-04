@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vans Store</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/vans-logo.png" alt="Vans Logo">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="dashboard/about.html">About</a></li>
+                <li><a href="dashboard/products.html">products</a></li>
+                <li><a href="dashboard/shoes.html">shoes</a></li>
+                <li><a href="dashboard/finger.html">Fingerboard</a></li>
+                <li><a href="dashboard/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>S K A T E S H O P</h1>
+                <p>KELOMPOK 8</p>
+                <button id="shopNowButton" onclick="window.location.href = 'products.html';">SHOP NOW</button>
+            </div>
+        </section>
+    </main>
+    <section class="about">
+        <h2>About Us</h2>
+        <p>SkateShop adalah toko yang didedikasikan untuk para skater. Kami menyediakan berbagai macam papan, roda, dan aksesoris berkualitas tinggi untuk memenuhi kebutuhan skating Anda.</p>
+    </section>
+    <section id="products" class="products">
+        <div class="products list">
+            <div class="product">
+                <img src="images/skate.jpg" alt="skateboard">
+                <h3>papan skateboard</h3>
+                <p>RP.1.500.000</p>
+                <button class="buy-btn" onclick="alert('Produk telah ditambahkan ke keranjang!')">buy now</button>
+            </div>
+            <div class="product">
+                <img src="images/roda.jpg" alt="skateboard">
+                <h3>roda skateboard</h3>
+                <p>RP.500.000</p>
+                <button class="buy-btn" onclick="alert('Produk telah ditambahkan ke keranjang!')">buy now</button>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <h2>Our Skateboard Products</h2>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="rodaskate.png" alt="Classic Skateboard">
+                <h3>Roda Skateboard</h3>
+                <p>RP. 200.000</p>
+                <button onclick="addToCart('Roda Skateboard', 59.99)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="truckskate.png" alt="Pro Skateboard">
+                <h3>Truck Skate</h3>
+                <p>RP. 400.000</p>
+                <button onclick="addToCart('Truck Skateboard', 89.99)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="skate1.png" alt="Street Skateboard">
+                <h3>Papan Skateboard</h3>
+                <p>RP. 500.000</p>
+                <button onclick="addToCart('Papan Skateboard', 74.99)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="bering.png" alt="Mountain Skateboard">
+                <h3>Bering Skateboard</h3>
+                <p>RP. 150.000</p>
+                <button onclick="addToCart('Bering Skateboard', 99.99)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="helm.png" alt="Cruiser Skateboard">
+                <h3>Helm Skateboard</h3>
+                <p>RP. 100.000</p>
+                <button onclick="addToCart('Helm Skateboard', 49.99)">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+    <div class="container">
+        <h1>Contact Page</h1>
+        <form action="contact.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

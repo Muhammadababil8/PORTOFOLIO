@@ -1,0 +1,270 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo img {
+    width: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url('images/skateboard3.jpg'); /* Ganti dengan gambar latar Anda */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Efek overlay gelap */
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #00ff00;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border: 2px solid #00ff00;
+    color: #fff;
+    background-color: transparent;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: #00ff00;
+    color: #333;
+}
+/*responsive*/
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+/* about */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.about {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+.products{
+    padding: 50px 20px;
+    text-align: center;
+}
+.products.list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.product img{
+    width: 100%;
+    height: auto;
+}
+.product h3{
+    margin: 10px 0;
+}
+.buy-btn {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    background-color: #e5533d;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 250px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* contact */
+.container{
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0
+    .1);
+}
+
+h1{
+    color: #333;
+    margin-bottom: 10px;
+}
+
+form{
+    margin-top: 20px;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: #3e8e41;
+}
+
+input[type="submit"]:active{
+    background-color: #2e6e37;
+}
+
+input[type="submit"]:focus{
+    outline: none;
+}
